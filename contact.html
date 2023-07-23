@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boom Bap Boombox</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <img class="logo" src="images/Boombox003-small-logo.png" alt="Boom Bap Boombox logo">
-    <header>
-        <nav class="nav">
-            <ul class="nav-links">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Boom Bap Boombox</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <img class="logo" src="images/Boombox003-small-logo.png" alt="Boom Bap Boombox logo">
+        <header>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Radio</a></li>
+                    <li><a href="mixes.html">Mixes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </header>
+
+        <nav class="nav-hamburger">
+            <ul class="nav-links-hamburger">
                 <li><a href="index.html">Radio</a></li>
                 <li><a href="mixes.html">Mixes</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+
+        <div id="container-email-form">
+            <h1>Contact</h1>
+            <h1>Boom Bap Boombox</h1>
+            <form target="_blank" action="https://formsubmit.co/deejayflic@hotmail.com" method="POST">
+                <div class="form-group">
+                <div class="form-row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                        </div>
+                        <input type="text" name="name" class="form-textbox" placeholder="Name" required>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                        </div>
+                        <input type="email" name="email" class="form-textbox" placeholder="Email Address" required>
+                    </div>
+                </div>
+                </div>
+                <div class="form-group">
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                    </div>
+                    <textarea placeholder="Message" class="form-textbox" name="message" rows="10" required></textarea>
+                </div>
+                <button type="submit">Submit Form</button>
+            </form>
         </div>
-    </header>
 
-    <nav class="nav-hamburger">
-        <ul class="nav-links-hamburger">
-            <li><a href="index.html">Radio</a></li>
-            <li><a href="mixes.html">Mixes</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div id="container-email-form">
-        <h1>Contact</h1>
-        <h1>Boom Bap Boombox</h1>
-        <form target="_blank" action="https://formsubmit.co/deejayflic@hotmail.com" method="POST">
-            <div class="form-group">
-              <div class="form-row">
-                <div class="col">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                    </div>
-                    <input type="text" name="name" class="form-textbox" placeholder="Name" required>
-                </div>
-                <div class="col">
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email address</label>
-                    </div>
-                    <input type="email" name="email" class="form-textbox" placeholder="Email Address" required>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                </div>
-                <textarea placeholder="Message" class="form-textbox" name="message" rows="10" required></textarea>
-            </div>
-            <button type="submit">Submit Form</button>
-        </form>
-    </div>
-
-</body>
+    </body>
 </html>

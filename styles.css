@@ -19,18 +19,18 @@ li, a, button {
 
 header {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: space-around;
+    /* align-items: center; */
     padding: 30px 10%;
 }
 
 .logo {
-    cursor: pointer;
-    margin-right: auto;
-}
+    width: 100%;
+    object-fit: cover; /* Maintain the aspect ratio and cover the entire viewport */
+  }
 
 .nav-links {
-    list-style: none;
+    display: flex;
 }
 
 .nav-links li {
@@ -191,11 +191,6 @@ body {
     resize: none;
   }
 
-/* testing */
-  
-
-
-/* testing */
   @media screen and (max-width: 900px) {
     #imageTop {
         display: none;

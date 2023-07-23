@@ -147,3 +147,19 @@ body {
     font-size: 16px;
     resize: none;
   }
+
+  @media screen and (max-width: 900px) {
+    #imageTop {
+        display: none;
+    }
+    #imageLeft {
+        display: none;
+    }
+    #imageRight {
+        display: none;
+    }
+    #radioControls {
+        width: 300px; 
+        height: 600px; 
+    }
+  }

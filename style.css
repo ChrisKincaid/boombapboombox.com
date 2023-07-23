@@ -1,0 +1,50 @@
+/* style.css */
+body {
+    margin: 0; /* Remove default body margin */
+}
+
+#outer {
+    text-align: center;
+}
+#inner {
+    display: inline-block;
+}
+
+#container-radio-top {
+    display: flex;
+    justify-content: center;
+    max-width: 250x; /* Set a maximum width for the container to prevent it from getting too wide */
+    margin: 0 auto; /* Center the container horizontally */
+    border: none;
+}
+#container-radio-body {
+    display: flex;
+    justify-content: center;
+    max-width: 1020x; /* Set a maximum width for the container to prevent it from getting too wide */
+    margin: 0 auto; /* Center the container horizontally */
+    border: none;
+}
+
+#imageTop {
+    padding-top: 30px;
+    width: 350px;
+    height: 50px;
+    display: inline-block;
+}
+
+#imageLeft {
+    width: 250px;
+    height: 316px;
+    display: inline-block;
+}
+
+#iframe {
+    border: none;
+    display: inline-block;
+}
+
+#imageRight {
+    width: 250px;
+    height: 316px;
+    display: inline-block;
+}

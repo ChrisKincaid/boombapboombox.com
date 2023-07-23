@@ -5,18 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boom Bap Boombox</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <img class="logo" src="images/Boombox003-small-logo.png" alt="Boom Bap Boombox logo">
-        <nav>
+        <nav class="nav">
             <ul class="nav-links">
                 <li><a href="index.html">Radio</a></li>
                 <li><a href="mixes.html">Mixes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- <a class="cta" href="contact.html"><button>Contact</button></a> -->
             </ul>
         </nav>
-        <a class="cta" href="contact.html"><button>Contact</button></a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
     </header>
+
+    <nav class="nav-hamburger">
+        <ul class="nav-links-hamburger">
+            <li><a href="index.html">Radio</a></li>
+            <li><a href="mixes.html">Mixes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
     <div id="container-email-form">
         <h1>Contact</h1>

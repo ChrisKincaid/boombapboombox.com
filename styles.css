@@ -5,6 +5,7 @@
     box-sizing: border-box; /* Add border box sizing to all elements */
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     background-color: hsl(220, 2%, 37%);
 }
 
@@ -43,6 +44,46 @@ header {
 
 .nav-links li a:hover {
     color: #0088a9;
+}
+
+.hamburger {
+    display: none;
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav-hamburger {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 20px 20px;
+}
+
+.nav-links-hamburger {
+    display: none;
+}
+.nav-links-hamburger li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+/* .nav-links-hamburger li a {
+    transition: all 0.3s ease 0s;
+} */
+
+.nav-links-hamburger li a:hover {
+    color: #0088a9;
+}
+.line {
+    display: none;
+    cursor: pointer;
+    width: 25px;
+    height: 3px;
+    background-color: #ece0f1;
+    margin: 5px 0;
+    transition: all 0.3s ease 0s;
+    opacity: 0.8;
 }
 
 .cta {
@@ -113,12 +154,14 @@ body {
     max-width: 1020px; /* Set a maximum width for the container to prevent it from getting too wide */
     margin: 0 auto; /* Center the container horizontally */
     border: none;
+
 }
 #container-email-form {
     max-width: 90%;
     margin: 0 auto;
     margin-top: 50px;
-    /* display: flex; */
+    padding-left: 20px;
+    padding-right: 20px;
     justify-content: center;
     max-width: 1020px; /* Set a maximum width for the container to prevent it from getting too wide */
     margin: auto auto; /* Center the container horizontally */
@@ -148,6 +191,11 @@ body {
     resize: none;
   }
 
+/* testing */
+  
+
+
+/* testing */
   @media screen and (max-width: 900px) {
     #imageTop {
         display: none;
@@ -160,6 +208,49 @@ body {
     }
     #radioControls {
         width: 300px; 
-        height: 600px; 
+        height: 650px; 
+    }
+  }
+
+  .nav-hamburger--open {
+    transform: translateX(0%) !important;
+    display: flex !important;
+  }
+
+  @media screen and (max-width: 650px) {
+    
+    .nav{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+    .line{
+        display: block;
+    }
+
+    .nav-hamburger{
+        transform: translateX(-100%);
+    }
+
+    .nav-links-hamburger {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #container-mix-players {
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        /* max-width: 1020px;
+        padding: 10px;
+        margin: auto auto;
+        border: none; */
+    }
+
+    .m-2 {
+        margin: 10px;
     }
   }

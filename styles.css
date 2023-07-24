@@ -1,6 +1,13 @@
 /* style.css */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+@font-face {
+    font-family: 'Wholecar PERSONAL USE';
+    src: url('fonts/Wholecar.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -21,10 +28,10 @@ body {
 header {
     display: flex;
     justify-content: space-around;
-    padding: 30px 10%;
+    padding: 0px 0%;
 }
 
-button {
+/* button {
     margin-left: 20px;
     padding: 9px 25px;
     background-color: rgb(0, 0, 0);
@@ -33,17 +40,17 @@ button {
     cursor: pointer;
     transition: all 0.3s ease 0s;
     float: right;
-}
+} */
 
 button:hover {
     background-color: #293333cc;
 }
 
 li, a, button {
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Wholecar PERSONAL USE', sans-serif;
     font-weight: 500;
-    font-size: 16px;
-    color: #ece0f1;
+    font-size: 6vw;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -53,7 +60,7 @@ li, a, button {
 
 .nav-links li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 0px;
 }
 
 .nav-links li a {
@@ -65,14 +72,14 @@ li, a, button {
 }
 
 #text-error {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Wholecar PERSONAL USE', sans-serif; */
     font-weight: 500;
-    font-size: 20px;
-    color: #ece0f1;
+    font-size: 4vw;
+    color: hsl(0, 0%, 0%);
     text-decoration: none;
     text-align: center;
     margin: 0px 20px;
-    border-right: 1px solid #ece0f1;
+    border-right: 1px solid hsl(0, 0%, 0%);
 }
 
 /* Hamburger menu -- Start */
@@ -132,7 +139,7 @@ li, a, button {
 }
 
 #imageTop {
-    padding-top: 30px;
+    padding-top: 10px;
     width: 350px;
     height: 75px;
     display: inline-block;

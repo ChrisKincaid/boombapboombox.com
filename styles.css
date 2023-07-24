@@ -130,7 +130,7 @@ li, a, button {
     cursor: pointer;
     width: 25px;
     height: 3px;
-    background-color: #ece0f1;
+    background-color: #000000;
     margin: 5px 0;
     transition: all 0.3s ease 0s;
     opacity: 0.8;
@@ -306,7 +306,7 @@ textarea {
     li, a, button {
         font-family: 'Graffitti New Demo', sans-serif;
         font-weight: 500;
-        font-size: 6vw;
+        font-size: 10vw;
         color: #000000;
         text-decoration: none;
     }

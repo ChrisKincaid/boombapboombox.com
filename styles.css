@@ -311,11 +311,7 @@ textarea {
         /* justify-content: center; */
         /* align-items: center; */
     }
-    .nav-hamburger{
-        /* justify-content: center; */
-        /* align-items: center; */
-        /* transform: translateX(-100%); */
-    }
+    
     .nav-links-hamburger {
         display: flex;
         flex-direction: column;

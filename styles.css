@@ -7,7 +7,13 @@
     font-weight: normal;
     font-style: normal;
   }
-
+  
+@font-face {
+      font-family: 'Graffitti New Demo';
+      src: url('fonts/GraffitiNewDemoRegular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
 * {
     box-sizing: border-box;
     margin: 0;
@@ -22,28 +28,35 @@ body {
 
 .logo {
     width: 100%;
-    object-fit: cover;
-  }
-
-header {
-    display: flex;
-    justify-content: space-around;
-    padding: 0px 0%;
 }
 
-/* button {
-    margin-left: 20px;
-    padding: 9px 25px;
-    background-color: rgb(0, 0, 0);
+.logo-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    max-height: 115px;
+    /* padding: 0px 0%; */
+}
+
+button {
     border: none;
-    border-radius: 0px;
+    outline: none;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
-    float: right;
-} */
+    background-color: transparent;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    /* transition: all 0.3s ease 0s; */
+}
 
 button:hover {
-    background-color: #293333cc;
+    color: hsl(0, 0%, 26%);
 }
 
 li, a, button {
@@ -60,19 +73,18 @@ li, a, button {
 
 .nav-links li {
     display: inline-block;
-    padding: 0px 0px;
+    padding: 70px 0%;
 }
 
-.nav-links li a {
-    transition: all 0.3s ease 0s;
-}
+/* .nav-links li a {
+    transition: all 3.3s ease 0s;
+} */
 
 .nav-links li a:hover {
     color: hsl(0, 0%, 26%);
 }
 
 #text-error {
-    /* font-family: 'Wholecar PERSONAL USE', sans-serif; */
     font-weight: 500;
     font-size: 4vw;
     color: hsl(0, 0%, 0%);
@@ -85,9 +97,9 @@ li, a, button {
 /* Hamburger menu -- Start */
 
 .hamburger {
-    display: none;
     list-style: none;
     cursor: pointer;
+    padding: 20px 20px;
 }
 
 .nav-hamburger {
@@ -107,7 +119,7 @@ li, a, button {
 }
 
 .nav-links-hamburger li a:hover {
-    color: #0088a9;
+    color: hsl(0, 0%, 26%);
 }
 .line {
     display: none;
@@ -191,7 +203,7 @@ li, a, button {
     border: none;
   }
 
-  input {
+input {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -202,7 +214,7 @@ li, a, button {
     font-size: 16px;
   }
 
-  textarea {
+textarea {
     width: 100%;
     height: 150px;
     padding: 12px 20px;
@@ -214,10 +226,45 @@ li, a, button {
     resize: none;
   }
 
-  /* Contact Forms -- Start */
-  /* Responsiveness Controls -- Start */
+/* Contact Forms -- Start */
+/* Flying Tapes -- Start */
 
-  @media screen and (max-width: 900px) {
+.tapes-float img{
+    display: none;
+    top: -50;
+    z-index: 1;
+    }
+
+.tapes-float{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    /* top: -50; */
+    }
+
+@keyframes tapes {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(80vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Flying Tapes -- End */
+/* Responsiveness Controls -- Start */
+
+@media screen and (max-width: 900px) {
     #imageTop {
         display: none;
     }
@@ -228,45 +275,59 @@ li, a, button {
         display: none;
     }
     #radioControls {
-        width: 300px; 
-        height: 650px; 
+        width: 300px;
+        height: 650px;
     }
-  }
+}
 
-  .nav-hamburger--open {
+.nav-hamburger--open {
     transform: translateX(0%) !important;
     display: flex !important;
-  }
+}
 
-  @media screen and (max-width: 650px) {
-    
+@media screen and (max-width: 650px) 
+{
     .nav{
         display: none;
     }
-
     .hamburger{
-        display: block;
+        display: flex;
+        align-items: center;
+        /* list-style: none; */
+        flex-direction: column;
+        /* padding: 35px 20px; */
+        /* top: 0; */
+        /* right: 0;     */
+    }
+    li, a, button {
+        font-family: 'Graffitti New Demo', sans-serif;
+        font-weight: 500;
+        font-size: 6vw;
+        color: #000000;
+        text-decoration: none;
     }
     .line{
         display: block;
+        /* justify-content: center; */
+        /* align-items: center; */
     }
-
     .nav-hamburger{
-        transform: translateX(-100%);
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* transform: translateX(-100%); */
     }
-
     .nav-links-hamburger {
         display: flex;
         flex-direction: column;
+        /* justify-content: center; */
         align-items: center;
+        
     }
-
     #container-mix-players {
         flex-direction: column;
         align-items: center;
     }
-
     .iframe-mixes {
         margin: 10px;
     }
-  }
+}

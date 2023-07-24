@@ -161,13 +161,15 @@ li, a, button {
 #container-mix-players {
     display: flex;
     justify-content: space-evenly;
-    max-width: 1020px; /* Set a maximum width for the container to prevent it from getting too wide */
-    margin: 0 auto; /* Center the container horizontally */
-    border: none;
-
 }
 
-/* Mixes Players -- Start */
+.iframe-mixes {
+    height: 450px;
+    border: none;
+    margin: 10px;
+}
+
+/* Mixes Players -- End */
 /* Contact Forms -- Start */
 
 #container-email-form {
@@ -257,7 +259,7 @@ li, a, button {
         align-items: center;
     }
 
-    .m-2 {
+    .iframe-mixes {
         margin: 10px;
     }
   }

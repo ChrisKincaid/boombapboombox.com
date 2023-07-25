@@ -32,10 +32,11 @@ body {
 
 .logo {
     width: 100%;
+    max-width: 2000px;
 }
 
 .logo-container {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -202,8 +203,8 @@ li, a, button {
     padding-left: 20px;
     padding-right: 20px;
     justify-content: center;
-    max-width: 1020px; /* Set a maximum width for the container to prevent it from getting too wide */
-    margin: auto auto; /* Center the container horizontally */
+    max-width: 1020px; 
+    margin: auto auto; 
     border: none;
   }
 

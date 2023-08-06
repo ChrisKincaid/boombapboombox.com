@@ -39,13 +39,18 @@ function getRandomInteger(min, max) {
         img.style.width = `${randomSize}px`;
         img.style.order = randomChild;
         img.style.display = 'flex';
+
+        // img.style.bottom = '0';
     });
   }
   
   // Call the function to set random styles on  after page load
-  window.onload = function () {
+  // window.onload = function () {
+  //   setRandomStyles();
+  // }
+  document.addEventListener('DOMContentLoaded', function () {
     setRandomStyles();
-  }
+  });
 
 // Flying tapes -- End
 

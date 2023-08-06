@@ -78,7 +78,8 @@ li, a, button {
 
 .nav-links li {
     display: inline-block;
-    padding: 70px 0%;
+    padding: 10px 0%;
+    margin: 150px 0px;
 }
 
 /* .nav-links li a {
@@ -156,6 +157,7 @@ li, a, button {
 }
 
 #imageTop {
+    margin: 200px 0px 0px 0px;
     padding-top: 10px;
     width: 350px;
     height: 75px;
@@ -188,9 +190,10 @@ li, a, button {
 }
 
 .iframe-mixes {
-    height: 450px;
+    height: 650px;
     border: none;
-    margin: 10px;
+    /* margin: 10px; */
+    margin-top: 150px;
 }
 
 /* Mixes Players -- End */
@@ -200,6 +203,7 @@ li, a, button {
     max-width: 90%;
     margin: 0 auto;
     margin-top: 50px;
+    padding-top: 150px;
     padding-left: 20px;
     padding-right: 20px;
     justify-content: center;
@@ -249,22 +253,22 @@ textarea {
     /* top: -50; */
     }
 
-@keyframes tapes {
-    0%{
-        transform: translateY(0);
-        opacity: 0;
+    @keyframes tapes {
+        0%{
+            transform: translateY(0);
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        70%{
+            opacity: 1;
+        }
+        100%{
+            transform: translateY(80vh) rotate(360deg);
+            opacity: 0;
+        }
     }
-    50%{
-        opacity: 1;
-    }
-    70%{
-        opacity: 1;
-    }
-    100%{
-        transform: translateY(80vh) rotate(360deg);
-        opacity: 0;
-    }
-}
 
 /* Flying Tapes -- End */
 /* Responsiveness Controls -- Start */
@@ -280,14 +284,15 @@ textarea {
         display: none;
     }
     #radioControls {
+        margin: 150px 0px 0px 0px;
         width: 300px;
         height: 650px;
     }
 }
 
 .nav-hamburger--open {
-    transform: translateX(0%) !important;
-    display: flex !important;
+    transform: translateX(0%);
+    display: flex;
 }
 
 @media screen and (max-width: 650px) 
@@ -302,7 +307,8 @@ textarea {
         flex-direction: column;
         /* padding: 35px 20px; */
         /* top: 0; */
-        /* right: 0;     */
+        /* right: 0; */
+        margin: 50px 0px 0px 0px;
     }
     li, a, button {
         font-family: 'Graffitti New Demo', sans-serif;
@@ -310,8 +316,10 @@ textarea {
         font-size: 10vw;
         color: #000000;
         text-decoration: none;
+        
     }
     .line{
+        
         display: block;
         /* justify-content: center; */
         /* align-items: center; */
@@ -324,11 +332,15 @@ textarea {
         align-items: center;
         
     }
+    #radioControls{
+        margin: 5px 0px 0px 0px;
+    }
     #container-mix-players {
         flex-direction: column;
         align-items: center;
     }
-    .iframe-mixes {
+    /* .iframe-mixes {
         margin: 10px;
-    }
+   
+    } */
 }

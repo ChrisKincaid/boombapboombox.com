@@ -48,9 +48,9 @@ function getRandomInteger(min, max) {
   // window.onload = function () {
   //   setRandomStyles();
   // }
-  document.addEventListener('DOMContentLoaded', function () {
-    setRandomStyles();
-  });
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   setRandomStyles();
+  // });
 
 // Flying tapes -- End
 

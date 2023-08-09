@@ -45,9 +45,9 @@ function getRandomInteger(min, max) {
   }
   
   // Call the function to set random styles on  after page load
-  // window.onload = function () {
-  //   setRandomStyles();
-  // }
+  window.onload = function () {
+    setRandomStyles();
+  }
   // document.addEventListener('DOMContentLoaded', function () {
   //   setRandomStyles();
   // });

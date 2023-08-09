@@ -106,6 +106,7 @@ li, a, button {
     list-style: none;
     cursor: pointer;
     padding: 20px 20px;
+    z-index: 1000;
 }
 
 .nav-hamburger {
@@ -134,7 +135,7 @@ li, a, button {
     height: 3px;
     background-color: #000000;
     margin: 5px 0;
-    transition: all 0.3s ease 0s;
+    /* transition: all 0.3s ease 0s; */
     opacity: 0.8;
 }
 
@@ -238,10 +239,11 @@ textarea {
 /* Contact Forms -- Start */
 /* Flying Tapes -- Start */
 
-.tapes-float img{
-    display: none;
+/* .tapes-float img{
+    display: flex;
     top: -50;
     z-index: 1;
+    animation: tapes 10s infinite;
     }
 
 .tapes-float{
@@ -250,7 +252,9 @@ textarea {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    /* top: -50; */
+    top: -50;
+    z-index: 1;
+    animation: tapes 10s infinite;
     }
 
     @keyframes tapes {
@@ -268,7 +272,7 @@ textarea {
             transform: translateY(80vh) rotate(360deg);
             opacity: 0;
         }
-    }
+    } */
 
 /* Flying Tapes -- End */
 /* Responsiveness Controls -- Start */
@@ -290,11 +294,7 @@ textarea {
     }
 }
 
-.nav-hamburger--open {
-    transform: translateX(0%);
-    display: flex;
-}
-
+/* 
 @media screen and (max-width: 650px) 
 {
     .nav{
@@ -303,11 +303,7 @@ textarea {
     .hamburger{
         display: flex;
         align-items: center;
-        /* list-style: none; */
         flex-direction: column;
-        /* padding: 35px 20px; */
-        /* top: 0; */
-        /* right: 0; */
         margin: 50px 0px 0px 0px;
     }
     li, a, button {
@@ -316,31 +312,32 @@ textarea {
         font-size: 10vw;
         color: #000000;
         text-decoration: none;
-        
     }
-    .line{
-        
+    .line{ 
         display: block;
-        /* justify-content: center; */
-        /* align-items: center; */
     }
-
     .nav-links-hamburger {
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
         
     }
+    .nav-hamburger--open {
+        transform: translateX(0%);
+        display: flex;
+    }
+
+
     #radioControls{
         margin: 5px 0px 0px 0px;
     }
     #container-mix-players {
         flex-direction: column;
         align-items: center;
-    }
-    /* .iframe-mixes {
+    } */
+        .iframe-mixes {
         margin: 10px;
    
-    } */
-}
+    } 
+} */
+/* Responsiveness Controls -- End */

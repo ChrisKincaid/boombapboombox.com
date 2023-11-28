@@ -1,4 +1,11 @@
 /* style.css */
+
+/* TEMP STYLES */
+.centerTEMP {
+    border: #000000 5px solid;
+
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 @font-face {
